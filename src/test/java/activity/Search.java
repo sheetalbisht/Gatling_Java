@@ -13,8 +13,8 @@ public class Search extends Simulation {
 
     // ./mvnw gatling:test => cmnd to run test
 
-    int userCount = Integer.getInteger("users", 10);
-    int rampDuration = Integer.getInteger("rampDuration", 60);
+    int userCount = Integer.getInteger("users", 50);
+    int rampDuration = Integer.getInteger("rampDuration", 100);
     int testDuration = Integer.getInteger("testDuration", 120);
 
     // HTTP configuration
