@@ -28,8 +28,7 @@ public class Search extends Simulation {
             http("Country Search API")
                     .get(session -> Utils.getCountrySearchPath())
                     .check(status().is(200))
-                    .check(bodyString().saveAs("response" +
-                            "Body")))
+                    .check(bodyString().saveAs("responseBody")))
             .exec(session -> {
                 System.out.println("Response Body:- ");
                 System.out.println(session.getString("responseBody"));
